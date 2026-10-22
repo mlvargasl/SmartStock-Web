@@ -1,0 +1,114 @@
+.forecast-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.forecast-header {
+  margin-bottom: 28px;
+}
+
+.forecast-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.forecast-header p {
+  margin-top: 6px;
+  color: #6b7280;
+}
+
+.forecast-config {
+  display: flex;
+  align-items: end;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.forecast-date {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.forecast-date label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.forecast-date input {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.external-data-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.context-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.context-card span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.context-card strong {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.forecast-info,
+.forecast-results,
+.forecast-empty {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 22px;
+  margin-bottom: 20px;
+}
+
+.forecast-info h2,
+.forecast-results h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.forecast-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.forecast-tags span {
+  background-color: #f3f4f6;
+  border-radius: 20px;
+  padding: 7px 12px;
+  font-size: 13px;
+}
+
+.forecast-results-header p {
+  margin-top: 5px;
+  color: #6b7280;
+}
+
+.forecast-empty {
+  color: #6b7280;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .external-data-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

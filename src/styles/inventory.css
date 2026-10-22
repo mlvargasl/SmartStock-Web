@@ -1,0 +1,98 @@
+.inventory-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.inventory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.inventory-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.inventory-header p {
+  margin-top: 6px;
+  color: #6b7280;
+}
+
+.inventory-summary {
+  min-width: 120px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inventory-summary span {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.inventory-summary strong {
+  margin-top: 5px;
+  font-size: 24px;
+}
+
+.inventory-content {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 20px;
+}
+
+.inventory-form-card,
+.inventory-table-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 22px;
+}
+
+.inventory-form-card h2,
+.inventory-table-card h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.inventory-form-card select,
+.inventory-form-card input {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.stock-status {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.stock-status.ok {
+  background-color: #ecfdf5;
+  color: #047857;
+}
+
+.stock-status.low {
+  background-color: #fff7ed;
+  color: #c2410c;
+}
+
+@media (max-width: 900px) {
+  .inventory-content {
+    grid-template-columns: 1fr;
+  }
+
+  .inventory-header {
+    align-items: flex-start;
+    gap: 16px;
+  }
+}

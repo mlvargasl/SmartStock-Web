@@ -1,0 +1,86 @@
+.recipes-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recipes-header {
+  margin-bottom: 28px;
+}
+
+.recipes-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.recipes-header p {
+  margin-top: 6px;
+  color: #6b7280;
+}
+
+.recipes-product {
+  width: 350px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.recipes-product label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.recipes-product select,
+.recipe-form-card select,
+.recipe-form-card input {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.recipes-content {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 20px;
+}
+
+.recipe-form-card,
+.recipe-table-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 22px;
+}
+
+.recipe-form-card h2,
+.recipe-table-card h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.delete-button {
+  border: 1px solid #d1d5db;
+  background-color: white;
+  padding: 7px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #f3f4f6;
+}
+
+.empty-message {
+  color: #6b7280;
+}
+
+@media (max-width: 900px) {
+  .recipes-content {
+    grid-template-columns: 1fr;
+  }
+
+  .recipes-product {
+    width: 100%;
+  }
+}

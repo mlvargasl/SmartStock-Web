@@ -1,0 +1,92 @@
+.sales-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sales-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.sales-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.sales-header p {
+  margin-top: 6px;
+  color: #6b7280;
+}
+
+.sales-content {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 20px;
+}
+
+.sales-form-card,
+.sales-table-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 22px;
+}
+
+.sales-form-card h2,
+.sales-table-card h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+td {
+  font-size: 14px;
+}
+
+.import-button {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.import-button:hover {
+  background-color: #f3f4f6;
+}
